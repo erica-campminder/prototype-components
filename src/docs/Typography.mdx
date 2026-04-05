@@ -1,0 +1,108 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Foundations/Typography" />
+
+# Typography
+
+All type is set in **Inter**. The scale has five categories — Display, Headline, Title, Body, and Label — each with size, weight, and line-height defined as CSS custom properties.
+
+---
+
+## Display
+
+Large hero text. Use for marketing, empty states, or major section headers.
+
+<div style={{ fontFamily: 'Inter, sans-serif', display: 'flex', flexDirection: 'column', gap: 24, marginBottom: 40 }}>
+  {[
+    ['Display LG', '60px', 500, 1.133, '--type-display-lg'],
+    ['Display MD', '48px', 500, 1.167, '--type-display-md'],
+    ['Display SM', '36px', 500, 1.222, '--type-display-sm'],
+  ].map(([name, size, weight, lh, token]) => (
+    <div key={name} style={{ borderBottom: '1px solid #F0F0F0', paddingBottom: 16 }}>
+      <div style={{ fontSize: size, fontWeight: weight, lineHeight: lh, color: '#282828', marginBottom: 8 }}>{name}</div>
+      <div style={{ fontSize: 11, color: '#A0A0A0', fontFamily: 'monospace' }}>{token} · {size} · weight {weight} · lh {lh}</div>
+    </div>
+  ))}
+</div>
+
+## Headline
+
+Section titles and page headers.
+
+<div style={{ fontFamily: 'Inter, sans-serif', display: 'flex', flexDirection: 'column', gap: 24, marginBottom: 40 }}>
+  {[
+    ['Headline LG', '32px', 600, 1.25, '--type-headline-lg'],
+    ['Headline MD', '28px', 600, 1.286, '--type-headline-md'],
+    ['Headline SM', '24px', 600, 1.333, '--type-headline-sm'],
+  ].map(([name, size, weight, lh, token]) => (
+    <div key={name} style={{ borderBottom: '1px solid #F0F0F0', paddingBottom: 16 }}>
+      <div style={{ fontSize: size, fontWeight: weight, lineHeight: lh, color: '#282828', marginBottom: 8 }}>{name}</div>
+      <div style={{ fontSize: 11, color: '#A0A0A0', fontFamily: 'monospace' }}>{token} · {size} · weight {weight} · lh {lh}</div>
+    </div>
+  ))}
+</div>
+
+## Title
+
+Card headers, table columns, modal titles, sidebar items.
+
+<div style={{ fontFamily: 'Inter, sans-serif', display: 'flex', flexDirection: 'column', gap: 24, marginBottom: 40 }}>
+  {[
+    ['Title LG', '22px', 600, 1.273, '--type-title-lg'],
+    ['Title MD', '16px', 600, 1.5, '--type-title-md'],
+    ['Title SM', '14px', 600, 1.429, '--type-title-sm'],
+  ].map(([name, size, weight, lh, token]) => (
+    <div key={name} style={{ borderBottom: '1px solid #F0F0F0', paddingBottom: 16 }}>
+      <div style={{ fontSize: size, fontWeight: weight, lineHeight: lh, color: '#282828', marginBottom: 8 }}>{name}</div>
+      <div style={{ fontSize: 11, color: '#A0A0A0', fontFamily: 'monospace' }}>{token} · {size} · weight {weight} · lh {lh}</div>
+    </div>
+  ))}
+</div>
+
+## Body
+
+Paragraph text, descriptions, form help text.
+
+<div style={{ fontFamily: 'Inter, sans-serif', display: 'flex', flexDirection: 'column', gap: 24, marginBottom: 40 }}>
+  {[
+    ['Body LG', '16px', 400, 1.5, '--type-body-lg'],
+    ['Body MD', '14px', 400, 1.429, '--type-body-md'],
+    ['Body SM', '12px', 400, 1.333, '--type-body-sm'],
+    ['Body SM Semibold', '12px', 600, 1.333, '--type-body-sm-semibold'],
+  ].map(([name, size, weight, lh, token]) => (
+    <div key={name} style={{ borderBottom: '1px solid #F0F0F0', paddingBottom: 16 }}>
+      <div style={{ fontSize: size, fontWeight: weight, lineHeight: lh, color: '#282828', marginBottom: 8 }}>{name} — The quick brown fox jumps over the lazy dog</div>
+      <div style={{ fontSize: 11, color: '#A0A0A0', fontFamily: 'monospace' }}>{token} · {size} · weight {weight} · lh {lh}</div>
+    </div>
+  ))}
+</div>
+
+## Label
+
+Form labels, tags, metadata, table cell content.
+
+<div style={{ fontFamily: 'Inter, sans-serif', display: 'flex', flexDirection: 'column', gap: 24, marginBottom: 40 }}>
+  {[
+    ['Label LG', '14px', 400, 1.429, '--type-label-lg'],
+    ['Label MD', '12px', 400, 1.333, '--type-label-md'],
+    ['Label SM', '11px', 400, 1.455, '--type-label-sm'],
+  ].map(([name, size, weight, lh, token]) => (
+    <div key={name} style={{ borderBottom: '1px solid #F0F0F0', paddingBottom: 16 }}>
+      <div style={{ fontSize: size, fontWeight: weight, lineHeight: lh, color: '#282828', marginBottom: 8, textTransform: 'uppercase', letterSpacing: '0.04em' }}>{name}</div>
+      <div style={{ fontSize: 11, color: '#A0A0A0', fontFamily: 'monospace' }}>{token} · {size} · weight {weight} · lh {lh}</div>
+    </div>
+  ))}
+</div>
+
+---
+
+## Using type tokens in CSS
+
+```css
+.my-heading {
+  font-family: var(--font-family);
+  font-size: var(--type-headline-lg-size);
+  font-weight: var(--type-headline-lg-weight);
+  line-height: var(--type-headline-lg-line-height);
+}
+```

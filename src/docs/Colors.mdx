@@ -1,0 +1,130 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Foundations/Colors" />
+
+# Colors
+
+The CampMinder color system is built on six base palettes, each with a 100–1000 scale. Semantic tokens map these to roles like primary, error, and success.
+
+---
+
+## Purple — Primary brand color
+
+<div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 32 }}>
+  {[
+    ['100', '#EFE8F7'],['200', '#DED0EF'],['300', '#C9B1E5'],['400', '#AD8BD7'],
+    ['500', '#9264CA'],['600', '#773DBD'],['700', '#603FA3'],['800', '#380F8C'],
+    ['900', '#381A69'],['1000', '#27065C'],
+  ].map(([step, hex]) => (
+    <div key={step} style={{ textAlign: 'center', fontFamily: 'Inter, sans-serif' }}>
+      <div style={{ width: 64, height: 64, background: hex, borderRadius: 6, border: '1px solid rgba(0,0,0,0.08)', marginBottom: 4 }} />
+      <div style={{ fontSize: 11, color: '#505050' }}>{step}</div>
+      <div style={{ fontSize: 10, color: '#808080' }}>{hex}</div>
+    </div>
+  ))}
+</div>
+
+## Neutral
+
+<div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 32 }}>
+  {[
+    ['100', '#FFFFFF'],['200', '#F3F3F3'],['300', '#F0F0F0'],['400', '#DDDDDD'],
+    ['500', '#CCCCCC'],['600', '#A0A0A0'],['700', '#808080'],['800', '#505050'],
+    ['900', '#282828'],['1000', '#000000'],
+  ].map(([step, hex]) => (
+    <div key={step} style={{ textAlign: 'center', fontFamily: 'Inter, sans-serif' }}>
+      <div style={{ width: 64, height: 64, background: hex, borderRadius: 6, border: '1px solid rgba(0,0,0,0.08)', marginBottom: 4 }} />
+      <div style={{ fontSize: 11, color: '#505050' }}>{step}</div>
+      <div style={{ fontSize: 10, color: '#808080' }}>{hex}</div>
+    </div>
+  ))}
+</div>
+
+## Blue
+
+<div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 32 }}>
+  {[
+    ['100', '#E4EDF9'],['200', '#CADAF3'],['300', '#A7C2EB'],['400', '#7AA3E0'],
+    ['500', '#4E85D6'],['600', '#2266CC'],['700', '#1F5EBC'],['800', '#1B52A3'],
+    ['900', '#17458B'],['1000', '#143D7A'],
+  ].map(([step, hex]) => (
+    <div key={step} style={{ textAlign: 'center', fontFamily: 'Inter, sans-serif' }}>
+      <div style={{ width: 64, height: 64, background: hex, borderRadius: 6, border: '1px solid rgba(0,0,0,0.08)', marginBottom: 4 }} />
+      <div style={{ fontSize: 11, color: '#505050' }}>{step}</div>
+      <div style={{ fontSize: 10, color: '#808080' }}>{hex}</div>
+    </div>
+  ))}
+</div>
+
+## Green
+
+<div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 32 }}>
+  {[
+    ['100', '#E6F1E7'],['200', '#CDE2CE'],['300', '#ACCFAE'],['400', '#82B785'],
+    ['500', '#599F5D'],['600', '#2F8734'],['700', '#2B7C30'],['800', '#266C2A'],
+    ['900', '#205C23'],['1000', '#1C511F'],
+  ].map(([step, hex]) => (
+    <div key={step} style={{ textAlign: 'center', fontFamily: 'Inter, sans-serif' }}>
+      <div style={{ width: 64, height: 64, background: hex, borderRadius: 6, border: '1px solid rgba(0,0,0,0.08)', marginBottom: 4 }} />
+      <div style={{ fontSize: 11, color: '#505050' }}>{step}</div>
+      <div style={{ fontSize: 10, color: '#808080' }}>{hex}</div>
+    </div>
+  ))}
+</div>
+
+## Orange
+
+<div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 32 }}>
+  {[
+    ['100', '#FFF4E4'],['200', '#FFEAC9'],['300', '#FFDBA5'],['400', '#FFCA78'],
+    ['500', '#FFB84B'],['600', '#FFA61E'],['700', '#EB991C'],['800', '#CC8518'],
+    ['900', '#AD7114'],['1000', '#996412'],
+  ].map(([step, hex]) => (
+    <div key={step} style={{ textAlign: 'center', fontFamily: 'Inter, sans-serif' }}>
+      <div style={{ width: 64, height: 64, background: hex, borderRadius: 6, border: '1px solid rgba(0,0,0,0.08)', marginBottom: 4 }} />
+      <div style={{ fontSize: 11, color: '#505050' }}>{step}</div>
+      <div style={{ fontSize: 10, color: '#808080' }}>{hex}</div>
+    </div>
+  ))}
+</div>
+
+## Red
+
+<div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 32 }}>
+  {[
+    ['100', '#F9E7E0'],['200', '#F3CEC2'],['300', '#EBAE99'],['400', '#E28566'],
+    ['500', '#D85D33'],['600', '#CE3400'],['700', '#BE3000'],['800', '#A52A00'],
+    ['900', '#8C2300'],['1000', '#7C1F00'],
+  ].map(([step, hex]) => (
+    <div key={step} style={{ textAlign: 'center', fontFamily: 'Inter, sans-serif' }}>
+      <div style={{ width: 64, height: 64, background: hex, borderRadius: 6, border: '1px solid rgba(0,0,0,0.08)', marginBottom: 4 }} />
+      <div style={{ fontSize: 11, color: '#505050' }}>{step}</div>
+      <div style={{ fontSize: 10, color: '#808080' }}>{hex}</div>
+    </div>
+  ))}
+</div>
+
+---
+
+## Semantic Tokens
+
+These map base colors to roles. Use semantic tokens in components — not raw hex values.
+
+<div style={{ fontFamily: 'Inter, sans-serif', display: 'flex', flexDirection: 'column', gap: 8, maxWidth: 600 }}>
+  {[
+    ['--color-primary-default', '#380F8C', 'purple-800', 'Buttons, links, key actions'],
+    ['--color-information', '#2266CC', 'blue-600', 'Info states, badges'],
+    ['--color-success', '#2B7C30', 'green-700', 'Success states'],
+    ['--color-warning', '#EB991C', 'orange-700', 'Warning states'],
+    ['--color-error', '#BE3000', 'red-700', 'Error states'],
+    ['--color-page-background', '#F9FAFE', '—', 'Page background'],
+  ].map(([token, hex, base, usage]) => (
+    <div key={token} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '8px 12px', background: '#F9F9F9', borderRadius: 6 }}>
+      <div style={{ width: 32, height: 32, background: hex, borderRadius: 4, border: '1px solid rgba(0,0,0,0.08)', flexShrink: 0 }} />
+      <div style={{ flex: 1 }}>
+        <div style={{ fontSize: 12, fontWeight: 600, color: '#282828', fontFamily: 'monospace' }}>{token}</div>
+        <div style={{ fontSize: 11, color: '#808080' }}>{base} · {usage}</div>
+      </div>
+    </div>
+  ))}
+</div>
