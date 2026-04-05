@@ -122,12 +122,24 @@
 
   /* ── Typography: Font Family ── */
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-family-body: var(--font-family); /* alias for component compatibility */
 
   /* ── Typography: Font Weights ── */
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+
+  /* ── Typography: Convenience aliases (map to type scale) ── */
+  --font-size-xs: var(--type-body-sm-size);
+  --font-size-sm: var(--type-body-md-size);
+  --font-size-md: var(--type-body-lg-size);
+  --font-size-lg: var(--type-title-lg-size);
+  --font-size-xl: var(--type-headline-sm-size);
+  --font-size-xxl: var(--type-headline-lg-size);
+  --line-height-tight: var(--type-headline-lg-line-height);
+  --line-height-normal: var(--type-body-lg-line-height);
+  --line-height-relaxed: 1.75;
 
   /* ── Typography: Type Scale (from Figma Design System) ── */
   /* Display */

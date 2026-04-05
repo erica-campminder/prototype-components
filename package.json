@@ -1,6 +1,6 @@
 {
   "name": "@erica-campminder/prototype-components",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "type": "module",
   "description": "CampMinder shared design system components",
   "main": "./dist/index.cjs",
