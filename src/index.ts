@@ -8,4 +8,3 @@ export * from './components/SidePanel';
 export * from './components/SidebarNav';
 export * from './components/TextInput';
 export * from './components/TopNav';
-export * from './components/ui';
