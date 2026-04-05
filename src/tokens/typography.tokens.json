@@ -1,0 +1,45 @@
+{
+  "Title": {
+    "$type": "string",
+    "$value": "Jaini Purva\\",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1320:302",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "string",
+      "com.figma.isOverride": true
+    }
+  },
+  "Number": {
+    "$type": "number",
+    "$value": 16,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1320:304",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.aliasData": {
+        "targetVariableId": "VariableID:7f27c0cb9527e3b75b0ede57996ec367e3e7ae87/-1:-1",
+        "targetVariableName": "space-lg",
+        "targetVariableSetId": "VariableCollectionId:9b41eb8b38971cf27a34457dee51e3cf6f4af414/-1:-1",
+        "targetVariableSetName": "Space"
+      },
+      "com.figma.isOverride": true
+    }
+  },
+  "Number 2": {
+    "$type": "number",
+    "$value": 0,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1320:305",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.isOverride": true
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Mode 1"
+  }
+}

@@ -120,26 +120,93 @@
   --icon-xl: 32px;
   --icon-xxl: 40px;
 
-  /* ── Typography ── */
-  --font-family-title: 'Jaini Purva', serif;
-  --font-family-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* ── Typography: Font Family ── */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
-  --font-size-xs: 12px;
-  --font-size-sm: 14px;
-  --font-size-md: 16px;
-  --font-size-lg: 18px;
-  --font-size-xl: 20px;
-  --font-size-xxl: 24px;
-  --font-size-xxxl: 32px;
-
+  /* ── Typography: Font Weights ── */
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
-  --line-height-tight: 1.25;
-  --line-height-normal: 1.5;
-  --line-height-relaxed: 1.75;
+  /* ── Typography: Type Scale (from Figma Design System) ── */
+  /* Display */
+  --type-display-lg-size: 60px;
+  --type-display-lg-weight: 500;
+  --type-display-lg-line-height: 1.133;
+
+  --type-display-md-size: 48px;
+  --type-display-md-weight: 500;
+  --type-display-md-line-height: 1.167;
+
+  --type-display-sm-size: 36px;
+  --type-display-sm-weight: 500;
+  --type-display-sm-line-height: 1.222;
+
+  /* Headline */
+  --type-headline-lg-size: 32px;
+  --type-headline-lg-weight: 600;
+  --type-headline-lg-line-height: 1.25;
+
+  --type-headline-md-size: 28px;
+  --type-headline-md-weight: 600;
+  --type-headline-md-line-height: 1.286;
+
+  --type-headline-sm-size: 24px;
+  --type-headline-sm-weight: 600;
+  --type-headline-sm-line-height: 1.333;
+  --type-headline-sm-letter-spacing: 0.0025em;
+
+  /* Title */
+  --type-title-lg-size: 22px;
+  --type-title-lg-weight: 600;
+  --type-title-lg-line-height: 1.273;
+
+  --type-title-md-size: 16px;
+  --type-title-md-weight: 600;
+  --type-title-md-line-height: 1.5;
+  --type-title-md-letter-spacing: 0.0025em;
+
+  --type-title-sm-size: 14px;
+  --type-title-sm-weight: 600;
+  --type-title-sm-line-height: 1.429;
+  --type-title-sm-letter-spacing: 0.0025em;
+
+  /* Body */
+  --type-body-lg-size: 16px;
+  --type-body-lg-weight: 400;
+  --type-body-lg-line-height: 1.5;
+
+  --type-body-md-size: 14px;
+  --type-body-md-weight: 400;
+  --type-body-md-line-height: 1.429;
+  --type-body-md-letter-spacing: -0.001em;
+
+  --type-body-sm-size: 12px;
+  --type-body-sm-weight: 400;
+  --type-body-sm-line-height: 1.333;
+  --type-body-sm-letter-spacing: -0.001em;
+
+  --type-body-sm-semibold-size: 12px;
+  --type-body-sm-semibold-weight: 600;
+  --type-body-sm-semibold-line-height: 1.333;
+  --type-body-sm-semibold-letter-spacing: -0.001em;
+
+  /* Label */
+  --type-label-lg-size: 14px;
+  --type-label-lg-weight: 400;
+  --type-label-lg-line-height: 1.429;
+  --type-label-lg-letter-spacing: 0.0025em;
+
+  --type-label-md-size: 12px;
+  --type-label-md-weight: 400;
+  --type-label-md-line-height: 1.333;
+  --type-label-md-letter-spacing: 0.005em;
+
+  --type-label-sm-size: 11px;
+  --type-label-sm-weight: 400;
+  --type-label-sm-line-height: 1.455;
+  --type-label-sm-letter-spacing: 0.005em;
 
   /* ── Shadows ── */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
