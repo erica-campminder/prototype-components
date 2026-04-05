@@ -2,7 +2,7 @@ import React from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import wordmarkSvg from '../../assets/campminder-wordmark.svg';
+import wordmarkSvg from '../../assets/campminder-wordmark.svg?url';
 import './TopNav.css';
 
 export interface TopNavProps {
